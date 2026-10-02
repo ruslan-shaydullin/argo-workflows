@@ -1,0 +1,3 @@
+FROM scratch
+COPY workflow-controller /bin/workflow-controller
+ENTRYPOINT ["/bin/workflow-controller"]

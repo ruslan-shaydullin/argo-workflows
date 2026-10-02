@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "runs": {
+    "baseline": {
+      "status": "PASS",
+      "observations": 310,
+      "events": 14,
+      "actualControllerImageIDs": [
+        "sha256:7bb6033972a19fe33daaac24a254c8f491096b2e13040e9be160b565d2a2ab48"
+      ],
+      "milestones": {
+        "originalSuccessNotYetPersisted": {
+          "count": 223,
+          "first": {
+            "at": "2026-10-01T20:57:51.651079+00:00",
+            "elapsed_sec": 67.069897,
+            "privateRawIdentifier": "baseline/observations/00078.json",
+            "sha256": "6544339c5777024a9d14e21566e6cda27d88752ab19cca20666d2101f5fb1719",
+            "readTimes": {
+              "controller": "2026-10-01T20:57:51.554793+00:00",
+              "pods": "2026-10-01T20:57:51.605718+00:00",
+              "workflow": "2026-10-01T20:57:51.650418+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:02.111443+00:00",
+            "elapsed_sec": 257.536858,
+            "privateRawIdentifier": "baseline/observations/00300.json",
+            "sha256": "19fd566b4d0d6de62aa67018303b3d7a6fcd7b185239ff4d553e99753a251de3",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:01.974308+00:00",
+              "pods": "2026-10-01T21:01:02.047039+00:00",
+              "workflow": "2026-10-01T21:01:02.110874+00:00"
+            }
+          }
+        },
+        "heldWithWorkflowWorkersZero": {
+          "count": 0,
+          "first": null,
+          "last": null
+        },
+        "podAbsentBeforeTerminalResult": {
+          "count": 3,
+          "first": {
+            "at": "2026-10-01T21:01:02.955295+00:00",
+            "elapsed_sec": 258.380713,
+            "privateRawIdentifier": "baseline/observations/00301.json",
+            "sha256": "ed49de9f09620774f77be74f06fcbe99d6ac074bc39b8e5905799332d095fdaa",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:02.860345+00:00",
+              "pods": "2026-10-01T21:01:02.905087+00:00",
+              "workflow": "2026-10-01T21:01:02.953993+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:04.662226+00:00",
+            "elapsed_sec": 260.087627,
+            "privateRawIdentifier": "baseline/observations/00303.json",
+            "sha256": "334ed217100d822c791bdb373c693fe4b5eda3a0b9ba32907a11a946c79f1cde",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:04.571984+00:00",
+              "pods": "2026-10-01T21:01:04.615744+00:00",
+              "workflow": "2026-10-01T21:01:04.661582+00:00"
+            }
+          }
+        },
+        "finalOutcomeWithPodAbsent": {
+          "count": 6,
+          "first": {
+            "at": "2026-10-01T21:01:05.506346+00:00",
+            "elapsed_sec": 260.931748,
+            "privateRawIdentifier": "baseline/observations/00304.json",
+            "sha256": "6cf61511345a441188297980a9fe4f58df40550851dc5d0347a24c3d4a5c670d",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:05.408722+00:00",
+              "pods": "2026-10-01T21:01:05.454125+00:00",
+              "workflow": "2026-10-01T21:01:05.505697+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:09.772571+00:00",
+            "elapsed_sec": 265.197951,
+            "privateRawIdentifier": "baseline/observations/00309.json",
+            "sha256": "b8b302ebac821eb79970f96bc65886b91e5b2d3828285fcde955bb7481edd610",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:09.677400+00:00",
+              "pods": "2026-10-01T21:01:09.724539+00:00",
+              "workflow": "2026-10-01T21:01:09.771625+00:00"
+            }
+          }
+        }
+      },
+      "workloadMainOutputLine": "capture-ok",
+      "allOriginalContainersExitedZero": true,
+      "privateWorkloadMainLogSHA256": "82c8ea851241f48e83be7b595c7e94cafe5113feed06883dada189b8ad226f57",
+      "eventsSHA256": "cf572d07edcacca33868e2b937ccd7c26c551e6b4d6737484a464e6d2ece39cb",
+      "observationsSHA256": "70fbfb61541e03923d518c66de1e14b0aeb7187a91f891e4f9ae72c2974da294",
+      "resultSHA256": "12da1d3da0c8569f3f0c8835a4e9bc9974b98bc50acea360d712929a0dd69db0",
+      "privateRawHashesVerified": 310
+    },
+    "candidate": {
+      "status": "PASS",
+      "observations": 355,
+      "events": 15,
+      "actualControllerImageIDs": [
+        "sha256:e1552ce4eb0a3efcb675b00f2cb3bfe0a20c316a2e93897908ce3593fb1fe506"
+      ],
+      "milestones": {
+        "originalSuccessNotYetPersisted": {
+          "count": 272,
+          "first": {
+            "at": "2026-10-01T20:57:51.661768+00:00",
+            "elapsed_sec": 67.080537,
+            "privateRawIdentifier": "candidate/observations/00078.json",
+            "sha256": "c4a7cbaf95974c3a887df43a486a5db2ff5b517f82a7bfe1dedb033aef0d516d",
+            "readTimes": {
+              "controller": "2026-10-01T20:57:51.565067+00:00",
+              "pods": "2026-10-01T20:57:51.613626+00:00",
+              "workflow": "2026-10-01T20:57:51.661129+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:44.356982+00:00",
+            "elapsed_sec": 299.782126,
+            "privateRawIdentifier": "candidate/observations/00349.json",
+            "sha256": "d89cad95d7e57a63ea4894b2f7ccfa803a4e99c2c0ea2fa82fcfed256ba36523",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:44.262930+00:00",
+              "pods": "2026-10-01T21:01:44.310735+00:00",
+              "workflow": "2026-10-01T21:01:44.356100+00:00"
+            }
+          }
+        },
+        "heldWithWorkflowWorkersZero": {
+          "count": 46,
+          "first": {
+            "at": "2026-10-01T21:01:02.955018+00:00",
+            "elapsed_sec": 258.380378,
+            "privateRawIdentifier": "candidate/observations/00301.json",
+            "sha256": "d39159c95c3cf21f9c58765e3034e5ac9f2784088e10abf341a254d7816a19dd",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:02.845958+00:00",
+              "pods": "2026-10-01T21:01:02.907933+00:00",
+              "workflow": "2026-10-01T21:01:02.954425+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:41.758495+00:00",
+            "elapsed_sec": 297.183659,
+            "privateRawIdentifier": "candidate/observations/00346.json",
+            "sha256": "9718733f31115a1a7af4cec40480e56fc0ec189cb48edc043f28446af4b480fe",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:41.661563+00:00",
+              "pods": "2026-10-01T21:01:41.712054+00:00",
+              "workflow": "2026-10-01T21:01:41.757668+00:00"
+            }
+          }
+        },
+        "podAbsentBeforeTerminalResult": {
+          "count": 0,
+          "first": null,
+          "last": null
+        },
+        "finalOutcomeWithPodAbsent": {
+          "count": 5,
+          "first": {
+            "at": "2026-10-01T21:01:45.208758+00:00",
+            "elapsed_sec": 300.633901,
+            "privateRawIdentifier": "candidate/observations/00350.json",
+            "sha256": "a9edaaf0f8b3e4a43fafb97ed330abed8fd346ee20f4a5ece926e3460a963c6a",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:45.109213+00:00",
+              "pods": "2026-10-01T21:01:45.157526+00:00",
+              "workflow": "2026-10-01T21:01:45.207867+00:00"
+            }
+          },
+          "last": {
+            "at": "2026-10-01T21:01:48.639504+00:00",
+            "elapsed_sec": 304.064624,
+            "privateRawIdentifier": "candidate/observations/00354.json",
+            "sha256": "53d8f344e4d36222fb2a427ef9f1ee4b30e4aed295a3a1c3f5db99fe59c13b98",
+            "readTimes": {
+              "controller": "2026-10-01T21:01:48.540818+00:00",
+              "pods": "2026-10-01T21:01:48.589461+00:00",
+              "workflow": "2026-10-01T21:01:48.638848+00:00"
+            }
+          }
+        }
+      },
+      "workloadMainOutputLine": "capture-ok",
+      "allOriginalContainersExitedZero": true,
+      "privateWorkloadMainLogSHA256": "ef650a55cecf0c474d720b2bc1a8cabd388c425974088ebb0c874bdf6eec0a15",
+      "eventsSHA256": "01a51dac15088ac1df455aa1ac315cb58978e849f26b5ec9b3028cd173353abb",
+      "observationsSHA256": "7b3fd6dfb033930c2cef1ad5cbdfbb7e08f5a67e7ef55dd4888f3373ccec851c",
+      "resultSHA256": "2ea86c35adf2a6b173949cbf447f1f6bf5fba9fcd7b49f865cd7c4db161a4be3",
+      "privateRawHashesVerified": 355
+    }
+  },
+  "limit": "Each milestone describes sequential reads with their individual timestamps; this audit does not convert them to an atomic cross-resource snapshot."
+}

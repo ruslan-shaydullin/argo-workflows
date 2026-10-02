@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:09,000
+Both workloads completed successfully. Upstream ended with Workflow Error; the proposed controller ended Succeeded. This is one controlled ordering experiment per version.
+
+2
+00:00:09,000 --> 00:00:20,000
+Status capture enabled. Separate runs and Pod identities. Stop the controller; wait for successful workload completion; age the Pod 190 seconds; request deletion; run cleanup with zero Workflow workers. Candidate is held for 40 seconds in this phase; upstream resumes after observing Pod loss. Resume reconciliation. Setup does not patch Workflow status or Pod finalizers.
+
+3
+00:00:20,000 --> 00:00:33,000
+Both Pod APIs report Succeeded; the stored Workflow still reports Running. These are separate persisted resources. Successful execution alone does not settle the Workflow result.
+
+4
+00:00:33,000 --> 00:00:46,000
+The Pod carries a deletion timestamp and the status-capture finalizer. The Workflow result is still Running at the selected reads.
+
+5
+00:00:46,000 --> 00:01:00,000
+Upstream has lost the Pod. Proposed still holds the completed Pod. Workflow workers remain at zero; the upstream controller has already been stopped after cleanup.
+
+6
+00:01:00,000 --> 00:01:13,000
+Resume upstream: the Workflow reports Error. Pod Succeeded earlier; Workflow Error with pod deleted after resume.
+
+7
+00:01:13,000 --> 00:01:25,000
+Resume proposed: the result is persisted for this UID. Persisted Succeeded with taskResultSynced true and matching original capturedPodUID; a separate Pod API read reports absence. These reads are not atomic.
+
+8
+00:01:25,000 --> 00:01:38,000
+Final outcome comparison: Error upstream, Succeeded proposed with matching original UID. Both final Pod reads report absence. Different runs have different Pod UIDs.
+
+9
+00:01:38,000 --> 00:01:53,000
+Design diagram, not an observation timeline: capture exact Pod UID; persist result and offload reference where used; read fresh proof; release checked Pod finalizer. Uncertainty retains the finalizer; restart rediscovers cleanup. This demo does not exercise every supported path.
+
+10
+00:01:53,000 --> 00:02:06,000
+Extra reads remain with flag off. Whole-map legacy hydration remains costly. Ordinary completed two-step legacy workflows are not automatically recaptured. No production frequency or latency claim, and no claim that this demo covers every lifecycle or offload path.
+
+11
+00:02:06,000 --> 00:02:20,000
+Three reading depths: replay for the outcome; PR description and costs for design; reviewer-guide and reproduction instructions for deep review. Exact source lines, timestamps and SHA-256 hashes are recorded in scenes.json. Text alternative in transcript.md.
+
+12
+00:02:20,000 --> 00:02:30,000
+Preserve the result before allowing cleanup. Observed upstream Error; observed proposed Succeeded with original captured Pod UID. Review persisted proof, Pod identity, legacy and rollout behavior, and cost. Local candidate, not merged.

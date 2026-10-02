@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "provenanceReferencesVerified": 22,
+  "durationSeconds": 150,
+  "readSynchronization": "sequential independent reads; never claimed atomic",
+  "observationIntermediateNotInvented": true,
+  "visualQA": [
+    "scene-02",
+    "scene-05",
+    "scene-07",
+    "scene-09",
+    "scene-10",
+    "scene-11",
+    "encoded frame at 91sec (scene08)",
+    "scene-06 after editorial correction: Workflow reports Error"
+  ],
+  "decode": "ffmpeg full video decode PASS",
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "24/1",
+        "nb_frames": "3600"
+      }
+    ],
+    "format": {
+      "duration": "150.000000",
+      "size": "2346290"
+    }
+  },
+  "files": {
+    "demo.mp4": {
+      "sha256": "0ae4dbeb684de9f2d6170a6a8f8af992bff813abe2b35b5067c1b6324a9859a4",
+      "bytes": 2346290
+    },
+    "poster.png": {
+      "sha256": "75dd5514683c1d42ad5a6e5ced3ab5cf2700a17d7fe3c68888f1815644f352a0",
+      "bytes": 78102
+    },
+    "scenes.json": {
+      "sha256": "0f20b2095dbe1fa26d88fe2290610159f1c5cc1de6c8575bd9158691c6b1b841",
+      "bytes": 12172
+    },
+    "transcript.md": {
+      "sha256": "a89f9eb5786cbb579fea073bf58bbc47e4f60cd401e2d04c5b39881c4728c3f4",
+      "bytes": 8773
+    },
+    "captions.srt": {
+      "sha256": "7d6cee8505769b16a493895fb5c8f546826c6217554d3504bc4872b33222633a",
+      "bytes": 2947
+    }
+  },
+  "recordSHA256Encoding": "UTF-8 JSONL record bytes without terminal newline",
+  "selectedObservationLines": {
+    "baseline": [
+      79,
+      300,
+      302,
+      305
+    ],
+    "candidate": [
+      79,
+      300,
+      347,
+      351
+    ]
+  },
+  "captions": "Burned in as designed cards; optional captions.srt is a sidecar, not an automatic overlay.",
+  "sourcesDeduplicatedWithinEachScene": true
+}

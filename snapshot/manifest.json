@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-10-01T21:10:06.231804+00:00",
+  "status": "LOCAL_PRESENTATION_PACKAGE_READY",
+  "scope": "Presentation item 2: fresh real-controller comparison, captioned API replay, portable reproducer and reviewer navigation. No publication.",
+  "base": "dadd69141c570fa678f7d51ee6decfe3fa77f109",
+  "source_set_sha256": "50a6b953587fbf7eccdc6c61f0d7a0db1fcae87c699293104d6ed6298b6d60fd",
+  "patch_sha256": "aeba17d588a6fb9434f4d66eeaa72bdc20313a895e6a7eb3476dd2f9c6d11614",
+  "demo_seconds": 150,
+  "source_references_verified": 22,
+  "observations": {
+    "baseline": 310,
+    "candidate": 355
+  },
+  "prior_test_suites_rerun_for_presentation": false,
+  "privacy": "Only allowlisted API observations; raw API responses and command logs retained privately. No kubeconfig, credentials or cluster dumps included.",
+  "files": {
+    "Dockerfile.controller": {
+      "sha256": "479f60dd59f12098b74befd691238ca3ce2db6c8e7a1aac01575553b642f5ee5",
+      "bytes": 103
+    },
+    "LICENSE": {
+      "sha256": "c996fc213c94f4a4a838407d355b081226caa7b103a4f239bb87fb8f1d8e3a60",
+      "bytes": 11352
+    },
+    "README.md": {
+      "sha256": "f09d6834299e5e5afde1b33bde48eb9c8ee9f7113ca13b4526086c6a62732964",
+      "bytes": 4972
+    },
+    "argo-17024.patch": {
+      "sha256": "aeba17d588a6fb9434f4d66eeaa72bdc20313a895e6a7eb3476dd2f9c6d11614",
+      "bytes": 347490
+    },
+    "captions.srt": {
+      "sha256": "7d6cee8505769b16a493895fb5c8f546826c6217554d3504bc4872b33222633a",
+      "bytes": 2947
+    },
+    "costs.md": {
+      "sha256": "8015defbe6dc59e896973c56325e12dfe0cdf49adf96917b7e92be0a8457fa51",
+      "bytes": 3892
+    },
+    "demo.mp4": {
+      "sha256": "0ae4dbeb684de9f2d6170a6a8f8af992bff813abe2b35b5067c1b6324a9859a4",
+      "bytes": 2346290
+    },
+    "diff-map.json": {
+      "sha256": "7ca09e8a48418f6da0f6679776657e83c9fc3c39462134ab3fcf9fd69e3d7a15",
+      "bytes": 8032
+    },
+    "evidence/cost-comparison.json": {
+      "sha256": "2fa42a08122ae744497d50ef87445e4f63f957057a7dce31f4587f5855d8d269",
+      "bytes": 479655
+    },
+    "evidence/observation-audit.json": {
+      "sha256": "d6def9de114740d4bfd773ad06a496fe9e0c580a07dc7ad17be57d7e28169f34",
+      "bytes": 8595
+    },
+    "evidence/video-validation.json": {
+      "sha256": "88004b0b6848d2c6146931045c54021dd2da93ba20b73540860f3c9e54573c0c",
+      "bytes": 1933
+    },
+    "poster.png": {
+      "sha256": "75dd5514683c1d42ad5a6e5ced3ab5cf2700a17d7fe3c68888f1815644f352a0",
+      "bytes": 78102
+    },
+    "pr-description.md": {
+      "sha256": "9d8b00319b4d0f50e7c7f3dbc9c9b5b6809526ead1d6c1b05b4f783aa55b7b7d",
+      "bytes": 6913
+    },
+    "pr-title.txt": {
+      "sha256": "fc48b7d980dd6473e159bf117a5ffd0fe4ff55212c99423a7858bb2a536d8978",
+      "bytes": 69
+    },
+    "reproduce.py": {
+      "sha256": "6843f30a1a9b0efb7cbfaeb07d506bc984f8a4fa1de61eda03afc16e5dc75f5f",
+      "bytes": 10314
+    },
+    "reproduction.md": {
+      "sha256": "483a8ed40fe8a8c23a5f6e77bfcc36eee7dd77bcd12bb48d4a0a48246c4742f2",
+      "bytes": 5224
+    },
+    "reviewer-guide.md": {
+      "sha256": "74a66ecd25b928fc2dba60354b9908ede0db75724a2757289842fdae8d616239",
+      "bytes": 9494
+    },
+    "run-summary.json": {
+      "sha256": "dd2cf195039392bc696c6c9e4dc8a5104b57f462c7fc5b558c6e194277cf6866",
+      "bytes": 6601
+    },
+    "scene-01.png": {
+      "sha256": "75dd5514683c1d42ad5a6e5ced3ab5cf2700a17d7fe3c68888f1815644f352a0",
+      "bytes": 78102
+    },
+    "scene-02.png": {
+      "sha256": "3decdc7b5c0daf178c31e9cfec711dde0cf264ad87cb03c1bf9120e3591e609e",
+      "bytes": 100042
+    },
+    "scene-03.png": {
+      "sha256": "90d3248d91eecceb78cbc86d7865fd35e3e3bdf6d7c4b2a399817135f5122347",
+      "bytes": 111172
+    },
+    "scene-04.png": {
+      "sha256": "d4bfb4e09fa020fa58e36b9177b2af5aab092ff25dea3e3475727d7b959dac8c",
+      "bytes": 106951
+    },
+    "scene-05.png": {
+      "sha256": "ef5891f686f7de5e99320b5ced34fa43f51877ba53a9a0bc700957c6c4f51da9",
+      "bytes": 117392
+    },
+    "scene-06.png": {
+      "sha256": "61cf045950ce271a16ccdd1bf0074c4fdf4d4634cdac79ed45fb812c326e6066",
+      "bytes": 125185
+    },
+    "scene-07.png": {
+      "sha256": "54a73401fec99334969516182ca89a32fc7889e567b0014a17e4e2cc767ee7f0",
+      "bytes": 139737
+    },
+    "scene-08.png": {
+      "sha256": "ccef52637a49fdf97651fd63a543d2271b88eefcb77ddac706ac5818794f79b1",
+      "bytes": 123020
+    },
+    "scene-09.png": {
+      "sha256": "c4a8b81a2c47d6af64dadf7bcaf9509a73230082ac7107639b8f38b5099e83fd",
+      "bytes": 83368
+    },
+    "scene-10.png": {
+      "sha256": "e167486e52266b5ca29a33c00ccbf805164a0d2c0b1bef53995cfe9abf88578b",
+      "bytes": 88559
+    },
+    "scene-11.png": {
+      "sha256": "d63b547c117fa6ab5f0d7b4406d533fbd21f6fcc8e918b718d3aadade916edb4",
+      "bytes": 78757
+    },
+    "scene-12.png": {
+      "sha256": "bcb9952cb70d1e9168779779bc9d81d4a94e54d31372ff23a375881942d26e66",
+      "bytes": 88169
+    },
+    "scenes.json": {
+      "sha256": "0f20b2095dbe1fa26d88fe2290610159f1c5cc1de6c8575bd9158691c6b1b841",
+      "bytes": 12172
+    },
+    "traces/baseline-events.jsonl": {
+      "sha256": "cf572d07edcacca33868e2b937ccd7c26c551e6b4d6737484a464e6d2ece39cb",
+      "bytes": 21329
+    },
+    "traces/baseline.jsonl": {
+      "sha256": "70fbfb61541e03923d518c66de1e14b0aeb7187a91f891e4f9ae72c2974da294",
+      "bytes": 486205
+    },
+    "traces/candidate-events.jsonl": {
+      "sha256": "01a51dac15088ac1df455aa1ac315cb58978e849f26b5ec9b3028cd173353abb",
+      "bytes": 23891
+    },
+    "traces/candidate.jsonl": {
+      "sha256": "7b3fd6dfb033930c2cef1ad5cbdfbb7e08f5a67e7ef55dd4888f3373ccec851c",
+      "bytes": 568624
+    },
+    "transcript.md": {
+      "sha256": "a89f9eb5786cbb579fea073bf58bbc47e4f60cd401e2d04c5b39881c4728c3f4",
+      "bytes": 8773
+    },
+    "validation.md": {
+      "sha256": "6b8f0df5206573e33aa010d804885d1ad5764edfa314372c220fa1e89260ec12",
+      "bytes": 3861
+    }
+  }
+}

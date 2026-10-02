@@ -1,0 +1,187 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "at": "2026-10-01T21:01:49.381585+00:00",
+  "preflight": {
+    "at": "2026-10-01T20:56:44.572214+00:00",
+    "images": {
+      "baseline": {
+        "tag": "argo-17024-controller:baseline-dadd6914",
+        "criConfigID": "sha256:7bb6033972a19fe33daaac24a254c8f491096b2e13040e9be160b565d2a2ab48",
+        "rootFSLayers": [
+          "sha256:4180471046ceb4081e597cc42b6bbc996b98fbf15b0087bad0fd019602590464"
+        ],
+        "dockerOCIIndex": "sha256:0ee2dec5ad87f560b5a4858052454f4ca3fe36ce6a13fc5d837e6455ac48893a",
+        "baseCommit": "dadd69141c570fa678f7d51ee6decfe3fa77f109"
+      },
+      "candidate": {
+        "tag": "argo-17024-p5:production-50a6b953587f",
+        "criConfigID": "sha256:e1552ce4eb0a3efcb675b00f2cb3bfe0a20c316a2e93897908ce3593fb1fe506",
+        "rootFSLayers": [
+          "sha256:f30d0cd708bc456aa85b1955e8f86b09e2fc09be1006427e85091e9b91902776"
+        ],
+        "dockerOCIIndex": "sha256:8324b532e5708cd7b3e0d004f2cdd624c1d4700565bcf2866081179e6022bf80",
+        "sourceSetSHA256": "50a6b953587fbf7eccdc6c61f0d7a0db1fcae87c699293104d6ed6298b6d60fd",
+        "binarySHA256": "fd933f717a06125643e1c947413c228f8994bf8259cf29a9869f9fef7aaa9aa3",
+        "productionOverlay": false
+      }
+    },
+    "reproducerSHA256": "6843f30a1a9b0efb7cbfaeb07d506bc984f8a4fa1de61eda03afc16e5dc75f5f",
+    "oldControllersAtZero": 10,
+    "postgresDesiredReplicas": 1,
+    "capturedPodUIDSchema": {
+      "type": "string"
+    },
+    "rbacSourceFileSHA256": "559300ac8304c9da0c1ebb3a9bce3a06cd2f51974fae9e4a961582bbd8989444"
+  },
+  "runs": {
+    "baseline": {
+      "status": "PASS",
+      "expected": "baseline-loss",
+      "namespace": "argo-17024-repro-demo-base-20261002",
+      "image": "argo-17024-controller:baseline-dadd6914",
+      "podUID": "c5bd9665-13a9-4d17-a873-3b4f0d071146",
+      "processExitCode": 0,
+      "started_at": "2026-10-01T20:56:44.580743+00:00",
+      "completed_at": "2026-10-01T21:01:10.254050+00:00",
+      "elapsed_sec": 265.679,
+      "originalPod": {
+        "name": "capture-repro",
+        "uid": "c5bd9665-13a9-4d17-a873-3b4f0d071146",
+        "resourceVersion": "143483",
+        "phase": "Succeeded",
+        "finalizers": [
+          "workflows.argoproj.io/status"
+        ],
+        "deletionTimestamp": null,
+        "containerExitCodes": [
+          {
+            "name": "init",
+            "kind": "initContainerStatuses",
+            "exitCode": 0
+          },
+          {
+            "name": "main",
+            "kind": "containerStatuses",
+            "exitCode": 0
+          },
+          {
+            "name": "wait",
+            "kind": "containerStatuses",
+            "exitCode": 0
+          }
+        ]
+      },
+      "workflowBeforeDeletion": {
+        "name": "capture-repro",
+        "uid": "8d82a6c8-a84c-4c1f-82cc-72434325b99c",
+        "resourceVersion": "143368",
+        "phase": "Running",
+        "node": {
+          "id": "capture-repro",
+          "phase": "Running",
+          "taskResultSynced": false,
+          "capturedPodUID": null,
+          "message": null
+        }
+      },
+      "workflowFinal": {
+        "name": "capture-repro",
+        "uid": "8d82a6c8-a84c-4c1f-82cc-72434325b99c",
+        "resourceVersion": "143827",
+        "phase": "Error",
+        "node": {
+          "id": "capture-repro",
+          "phase": "Error",
+          "taskResultSynced": true,
+          "capturedPodUID": null,
+          "message": "pod deleted"
+        }
+      },
+      "finalDesiredControllerReplicas": 0,
+      "finalControllerPodCount": 0,
+      "finalWorkflowPodCount": 0,
+      "observationErrors": [],
+      "namespacePreserved": true
+    },
+    "candidate": {
+      "status": "PASS",
+      "expected": "candidate-capture",
+      "namespace": "argo-17024-repro-demo-final-20261002",
+      "image": "argo-17024-p5:production-50a6b953587f",
+      "podUID": "30170c63-043b-4551-b0e7-a91d7cccee95",
+      "processExitCode": 0,
+      "started_at": "2026-10-01T20:56:44.580795+00:00",
+      "completed_at": "2026-10-01T21:01:49.323823+00:00",
+      "elapsed_sec": 304.749,
+      "originalPod": {
+        "name": "capture-repro",
+        "uid": "30170c63-043b-4551-b0e7-a91d7cccee95",
+        "resourceVersion": "143484",
+        "phase": "Succeeded",
+        "finalizers": [
+          "workflows.argoproj.io/status"
+        ],
+        "deletionTimestamp": null,
+        "containerExitCodes": [
+          {
+            "name": "init",
+            "kind": "initContainerStatuses",
+            "exitCode": 0
+          },
+          {
+            "name": "main",
+            "kind": "containerStatuses",
+            "exitCode": 0
+          },
+          {
+            "name": "wait",
+            "kind": "containerStatuses",
+            "exitCode": 0
+          }
+        ]
+      },
+      "workflowBeforeDeletion": {
+        "name": "capture-repro",
+        "uid": "9a167aa4-0f34-4932-825c-cdebb6b312e6",
+        "resourceVersion": "143369",
+        "phase": "Running",
+        "node": {
+          "id": "capture-repro",
+          "phase": "Running",
+          "taskResultSynced": false,
+          "capturedPodUID": null,
+          "message": null
+        }
+      },
+      "workflowFinal": {
+        "name": "capture-repro",
+        "uid": "9a167aa4-0f34-4932-825c-cdebb6b312e6",
+        "resourceVersion": "143935",
+        "phase": "Succeeded",
+        "node": {
+          "id": "capture-repro",
+          "phase": "Succeeded",
+          "taskResultSynced": true,
+          "capturedPodUID": "30170c63-043b-4551-b0e7-a91d7cccee95",
+          "message": null
+        }
+      },
+      "finalDesiredControllerReplicas": 0,
+      "finalControllerPodCount": 0,
+      "finalWorkflowPodCount": 0,
+      "observationErrors": [],
+      "namespacePreserved": true
+    }
+  },
+  "preExistingDeploymentReplicasUnchanged": true,
+  "limits": [
+    "The observer performs sequential Kubernetes GETs, not an atomic multi-resource snapshot.",
+    "Rendered replay may condense waits; observation timestamps and complete allowlisted polls are retained.",
+    "One controlled ordering experiment per version, not a production frequency or performance benchmark.",
+    "Both variants use the candidate CRD schema; baseline binary does not write capturedPodUID.",
+    "The portable reproducer controls deployment scale/workflow-worker count and requests Pod deletion; it does not patch Workflow status or Pod finalizers.",
+    "Raw command output is retained privately; public projections contain only allowlisted observations.",
+    "Old controllers remain stopped; namespaces and data are preserved."
+  ]
+}

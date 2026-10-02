@@ -1,0 +1,262 @@
+{
+  "base": "dadd69141c570fa678f7d51ee6decfe3fa77f109",
+  "patch_sha256": "aeba17d588a6fb9434f4d66eeaa72bdc20313a895e6a7eb3476dd2f9c6d11614",
+  "changed_path_count": 61,
+  "groups": {
+    "authored_docs_and_navigation": [
+      ".features/pending/status-capture-before-pod-cleanup.md",
+      "docs/environment-variables.md",
+      "docs/status-capture.md",
+      "docs/upgrading.md",
+      "properdocs.yml"
+    ],
+    "test_automation": [
+      ".github/workflows/ci-build.yaml",
+      "Makefile"
+    ],
+    "generated_schema_manifests_model_docs": [
+      "api/jsonschema/schema.json",
+      "api/openapi-spec/swagger.json",
+      "docs/fields.md",
+      "manifests/base/crds/full/argoproj.io_workflows.yaml",
+      "manifests/quick-start-minimal.yaml",
+      "manifests/quick-start-mysql.yaml",
+      "manifests/quick-start-postgres.yaml",
+      "manifests/quick-start-telemetry.yaml",
+      "pkg/apis/workflow/v1alpha1/generated.pb.go",
+      "pkg/apis/workflow/v1alpha1/generated.proto",
+      "pkg/apis/workflow/v1alpha1/openapi_generated.go",
+      "sdks/java/client/docs/IoArgoprojWorkflowV1alpha1NodeStatus.md"
+    ],
+    "offline_operator_helper": [
+      "hack/status-capture.py"
+    ],
+    "tests_and_test_support": [
+      "hack/tests/test_status_capture.py",
+      "pkg/apis/workflow/v1alpha1/captured_pod_uid_test.go",
+      "workflow/controller/controller_test.go",
+      "workflow/controller/operator_capture_bridge_test.go",
+      "workflow/controller/operator_capture_control_test.go",
+      "workflow/controller/operator_capture_offload_test.go",
+      "workflow/controller/operator_capture_restart_test.go",
+      "workflow/controller/operator_capture_test.go",
+      "workflow/controller/operator_test.go",
+      "workflow/controller/pod/cleanup_cost_adapter_test.go",
+      "workflow/controller/pod/cleanup_cost_controls_test.go",
+      "workflow/controller/pod/cleanup_cost_test.go",
+      "workflow/controller/pod/queue_identity_test.go",
+      "workflow/controller/pod/queue_signal_test.go",
+      "workflow/controller/pod/queue_test.go",
+      "workflow/controller/pod/status_capture_diagnostics_test.go",
+      "workflow/controller/pod/status_capture_test.go",
+      "workflow/controller/pod/status_capture_timing_test.go",
+      "workflow/controller/pod/testing.go",
+      "workflow/controller/pod/workflow_cleanup_test.go",
+      "workflow/controller/pod_cleanup_capture_test.go",
+      "workflow/controller/pod_cleanup_cost_test.go",
+      "workflow/controller/pod_cleanup_intent_test.go",
+      "workflow/controller/pod_legacy_capture_test.go",
+      "workflow/hydrator/hydration_cost_test.go"
+    ],
+    "production_go": [
+      "pkg/apis/workflow/v1alpha1/workflow_types.go",
+      "workflow/controller/controller.go",
+      "workflow/controller/exec_control.go",
+      "workflow/controller/operator.go",
+      "workflow/controller/pod/accessors.go",
+      "workflow/controller/pod/cleanup.go",
+      "workflow/controller/pod/cleanup_key.go",
+      "workflow/controller/pod/controller.go",
+      "workflow/controller/pod/legacy_capture.go",
+      "workflow/controller/pod/queue.go",
+      "workflow/controller/pod/recovery.go",
+      "workflow/controller/pod/status_capture.go",
+      "workflow/controller/pod/status_capture_diagnostics.go",
+      "workflow/controller/pod/workflow_cleanup.go",
+      "workflow/controller/pod_cleanup.go",
+      "workflow/controller/pod_legacy_capture.go"
+    ]
+  },
+  "route": [
+    {
+      "repository_path": "pkg/apis/workflow/v1alpha1/workflow_types.go",
+      "sha256": "957492a45c3146237346fa18fcde0d43042ac3ba8ac66caf505d804b94920713",
+      "symbols": [
+        {
+          "symbol": "CapturedPodUID",
+          "line": 2664
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/operator.go",
+      "sha256": "5fc2414453113280d545a42a4404bc87bbe97532910deef699bf340aedbd3a01",
+      "symbols": [
+        {
+          "symbol": "assessNodeStatus",
+          "line": 1513
+        },
+        {
+          "symbol": "podCaptureUID",
+          "line": 1795
+        },
+        {
+          "symbol": "persistUpdates",
+          "line": 794
+        },
+        {
+          "symbol": "reapplyUpdate",
+          "line": 960
+        },
+        {
+          "symbol": "queuePendingPodRetirements",
+          "line": 905
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod_cleanup.go",
+      "sha256": "575c10938eadb8fce22eff2ab65f9756811460e2fd17a2e10a59fb8b419db3e4",
+      "symbols": [
+        {
+          "symbol": "lookupWorkflowForPodCleanup",
+          "line": 18
+        },
+        {
+          "symbol": "hydrateWorkflowForPodCleanup",
+          "line": 33
+        },
+        {
+          "symbol": "queuePodsForCleanup",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/status_capture.go",
+      "sha256": "0c3b2bd0507433beacd6ff12d1759999d24723f44cb290222606584219c9dfda",
+      "symbols": [
+        {
+          "symbol": "observePodCleanup",
+          "line": 52
+        },
+        {
+          "symbol": "capturedDisposition",
+          "line": 143
+        },
+        {
+          "symbol": "allowPodCleanup",
+          "line": 168
+        },
+        {
+          "symbol": "restartDisposition",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/queue.go",
+      "sha256": "51044676b6493444cbf752ca96bd461d1ec6964ca3818952476faae52deac6ab",
+      "symbols": [
+        {
+          "symbol": "processNextPodCleanupItem",
+          "line": 106
+        },
+        {
+          "symbol": "getPodCleanupPatch",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/recovery.go",
+      "sha256": "21836a342d8a3ce3dae6c2bad3bb67acbc7702af73d846cb1ceb5af1e866f3c6",
+      "symbols": [
+        {
+          "symbol": "ReconcilePodCleanup",
+          "line": 19
+        },
+        {
+          "symbol": "QueueWorkflowCleanup",
+          "line": 25
+        },
+        {
+          "symbol": "reconcilePodCleanup",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/exec_control.go",
+      "sha256": "85ddf067aa4f2638b39ff545601d562e1c0ef9bb9c0eec2c9b2e938750d82a62",
+      "symbols": [
+        {
+          "symbol": "handleExecutionControlError",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/workflow_cleanup.go",
+      "sha256": "0f1f9a2995d649b235b9bf3247cdcd2cbc0aea43aedebe996e7dc24a800268b6",
+      "symbols": [
+        {
+          "symbol": "resolveWorkflowPodCleanup",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod_legacy_capture.go",
+      "sha256": "b49aa812151b9280a84c7c21e1953dd0123a0e37fbd210dc6e5c1060f7ff4798",
+      "symbols": [
+        {
+          "symbol": "legacySuccessfulNode",
+          "line": 29
+        },
+        {
+          "symbol": "recaptureLegacyPod",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/legacy_capture.go",
+      "sha256": "07411389e41b09319923f7b0c8c8cabf6fed5159925f92497214c64cf12051ec",
+      "symbols": [
+        {
+          "symbol": "ensureCapturedDisposition",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "repository_path": "workflow/controller/pod/status_capture_diagnostics.go",
+      "sha256": "9ca8c335629aad5806809ade0e1c7834990fdb4a004db1311654a8491250b1d1",
+      "symbols": [
+        {
+          "symbol": "reportCleanupHold",
+          "line": 65
+        }
+      ]
+    },
+    {
+      "repository_path": "hack/status-capture.py",
+      "sha256": "1b5ad7b62e38bf0c246d339d7b5c9fb1e5f86d5d9fd8ca46bd27f91e7e9be0a3",
+      "symbols": [
+        {
+          "symbol": "prepare_release",
+          "line": 287
+        },
+        {
+          "symbol": "export_evidence",
+          "line": 308
+        },
+        {
+          "symbol": "main",
+          "line": 330
+        }
+      ]
+    }
+  ]
+}
